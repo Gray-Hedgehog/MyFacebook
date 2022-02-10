@@ -1,4 +1,7 @@
 
+@import "../variables.css";
+
+
 html {
     box-sizing: border-box;
 }
@@ -11,12 +14,12 @@ body {
     position: relative;
     margin: 0;
     font-family: "HelveticaNeueCyr", "Helvetica Neue", sans-serif;
-    color: #080808;
+    color: var(--facebook-black);
 }
 
 button {
     font-family: "HelveticaNeueCyr", "Helvetica Neue", sans-serif;
-    color: #080808;
+    color: var(--facebook-black);
 }
 
 input {
@@ -64,7 +67,7 @@ main {
     padding: 10px;
     margin-left: 10px;
     border-radius: 100px;
-    background-color: #F1F2F5;
+    background-color: var(--facebook-input-gray);
 }
 
 
@@ -116,7 +119,7 @@ main {
     display: grid;
     width: 40px;
     height: 40px;
-    background-color: #E5E6EB;
+    background-color: var(--facebook-light-gray);
     border-radius: 50%;
     align-items: center;
     justify-items: center;
@@ -125,7 +128,7 @@ main {
 main {
     width: 100%;
     margin: 0 auto;
-    background-color: #E5E6EB;
+    background-color: var(--facebook-light-gray);
 }
 
 .wrapper {
@@ -141,7 +144,7 @@ main {
 
 .profile-container {
     width: 100%;
-    background: linear-gradient(180deg, #6F6F7A 0%, #FFFFFF 47.92%);
+    background: linear-gradient(180deg, var(--facebook-gradient-gray) 0%, var(--facebook-white) 47.92%);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -200,7 +203,7 @@ main {
     font-weight: normal;
     font-style: normal;
     font-size: 17px;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 
@@ -238,7 +241,7 @@ main {
     font-style: normal;
     /*line-height: 20px;*/
     color: white;
-    background-color: #0572EF;
+    background-color: var(--facebook-blue);
     cursor: pointer;
 }
 
@@ -249,7 +252,7 @@ main {
     grid-column-gap: 10px;
     height: 60px;
     margin: 0 30px;
-    border-top: 1px solid #CFD0D4;
+    border-top: 1px solid var(--facebook-line-gray);
 }
 
 .row3-section1 {
@@ -270,13 +273,13 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    color: #66676B;
+    color: var(--facebook-gray);
     background-color: transparent;
     cursor: pointer;
 }
 
 .row3-section1 button:hover {
-    color: #0572EF;
+    color: var(--facebook-blue);
 }
 
 .masked::after {
@@ -287,7 +290,7 @@ main {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background-color: #66676B;
+    background-color: var(--facebook-gray);
     -webkit-mask-image: url("../img/icons/more_gray.svg");
     mask-image: url("../img/icons/more_gray.svg");
 }
@@ -301,7 +304,7 @@ main {
 /*    top: 50%;*/
 /*    right: 0;*/
 /*    transform: rotate(180deg) translateY(50%);*/
-/*    background-color: #66676B;*/
+/*    background-color: var(--facebook-gray);*/
 /*    -webkit-mask-image: url("../img/icons/more_gray.svg");*/
 /*    mask-image: url("../img/icons/more_gray.svg");*/
 /*}*/
@@ -314,7 +317,7 @@ main {
     top: 50%;
     right: 0;
     transform: rotate(180deg) translateY(50%);
-    background-color: #66676B;
+    background-color: var(--facebook-gray);
     -webkit-mask-image: url("../img/icons/more_gray.svg");
     mask-image: url("../img/icons/more_gray.svg");
 }
@@ -354,7 +357,7 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    background-color: #E5E6EB;
+    background-color: var(--facebook-light-gray);
     cursor: pointer;
 
 }
@@ -384,14 +387,14 @@ main {
     position: relative;
     top: 20%;
     transform: translateY(-50%);
-    background-color: #0572EF;
+    background-color: var(--facebook-blue);
     -webkit-mask-image: url("../img/icons/like.svg");
     mask-image: url("../img/icons/like.svg");
 
 }
 
 .row3-section2 .type1 button:active {
-    color: #0572EF;
+    color: var(--facebook-blue);
 }
 
 .row3-section2 .type2 button {
@@ -442,7 +445,7 @@ main {
 
 
 .side-row a {
-    color: #0572EF;
+    color: var(--facebook-blue);
 }
 
 .side-title {
@@ -462,7 +465,7 @@ main {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #0572EF;
+    color: var(--facebook-blue);
 }
 
 
@@ -489,7 +492,7 @@ main {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #DE3F4F;
+    color: var(--facebook-red);
 }
 
 .industry {
@@ -517,7 +520,7 @@ main {
     width: 33px;
     height: 33px;
     box-sizing: border-box;
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--facebook-white);
     border-radius: 50%;
     object-fit: cover;
 }
@@ -629,7 +632,7 @@ main {
     font-weight: normal;
     font-size: 13px;
     letter-spacing: 0.025em;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 .small-facebook img {
@@ -648,14 +651,14 @@ main {
     font-weight: normal;
     font-size: 15px;
     line-height: 19px;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 .black-flag {
     width: 39px;
     height: 39px;
     border-radius: 50%;
-    background-color: #F1F2F5;
+    background-color: var(--facebook-input-gray);
 }
 
 .page-created {
@@ -696,7 +699,7 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 .content-card {
@@ -731,7 +734,7 @@ main {
     width: 100%;
     max-width: 424px;
     height: 41px;
-    background-color: #E5E6EB;
+    background-color: var(--facebook-light-gray);
     border: none;
     border-radius: 6px;
     font-style: normal;
@@ -758,7 +761,7 @@ main {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 .card-header {
@@ -784,11 +787,11 @@ main {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.02em;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 .header-left .name b {
-    color: #080808;
+    color: var(--facebook-black);
 }
 
 .header-left .date {
@@ -797,7 +800,7 @@ main {
     font-size: 13px;
     line-height: 16px;
     letter-spacing: 0.025em;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 .header-left .date img {
@@ -811,7 +814,7 @@ main {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.02em;
-    color: #080808;
+    color: var(--facebook-black);
 }
 
 .post-picture {
@@ -835,7 +838,7 @@ main {
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 .who-is {
@@ -855,7 +858,7 @@ main {
     height: 18px;
     box-sizing: border-box;
     border-radius: 50%;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--facebook-white);
 }
 
 .post-emojis img:nth-of-type(6) {
@@ -896,8 +899,8 @@ main {
     width: 100%;
     margin-top: 12px;
     box-sizing: content-box;
-    border-top: 1px solid #CFD0D4;
-    border-bottom: 1px solid #CFD0D4;
+    border-top: 1px solid var(--facebook-line-gray);
+    border-bottom: 1px solid var(--facebook-line-gray);
     justify-content: space-around;
 }
 
@@ -912,7 +915,7 @@ main {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #66676B;
+    color: var(--facebook-gray);
     background: transparent;
 
 }
@@ -929,7 +932,7 @@ main {
     font-size: 15px;
     line-height: 18px;
     text-align: right;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 .avatar-little {
@@ -956,7 +959,7 @@ main {
     border-radius: 100px;
     align-content: center;
     justify-content: space-between;
-    background-color: #F1F2F5;
+    background-color: var(--facebook-input-gray);
 }
 
 .reply input {
@@ -967,7 +970,7 @@ main {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.015em;
-    color: #66676B;
+    color: var(--facebook-gray);
     background-color: transparent;
 }
 
@@ -994,7 +997,7 @@ main {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
 
 .card-wrapper {
@@ -1026,7 +1029,7 @@ main {
     /*max-width: 300px;*/
     height: 100%;
     max-height: 375px;
-    border: 1px solid #E5E6EB;
+    border: 1px solid var(--facebook-light-gray);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -1048,7 +1051,7 @@ main {
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 0.02em;
-    color: #080808;
+    color: var(--facebook-black);
 }
 
 .card-text {
@@ -1058,5 +1061,5 @@ main {
     font-size: 13px;
     line-height: 16px;
     letter-spacing: 0.025em;
-    color: #66676B;
+    color: var(--facebook-gray);
 }
