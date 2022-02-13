@@ -752,25 +752,30 @@ main {
     line-height: 21px;
 }
 
+
 .create-row2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
 }
 
-
-.create-row2 label {
+.create-row2 button {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 20px;
-    grid-gap: 10px;
-
-    justify-self: center;
+    grid-template-columns: 20px auto;
+    grid-gap: 9px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border: none;
+    justify-content: center;
+    align-content: center;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     color: var(--facebook-gray);
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .card-header {
