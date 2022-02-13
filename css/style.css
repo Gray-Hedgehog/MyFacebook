@@ -56,13 +56,12 @@ main {
 
 .navigation__left {
     display: grid;
-    grid-template-columns: 40px 281px;
+    grid-template-columns: 40px auto;
     align-items: center;
 }
 
 .navigation__search {
     position: relative;
-
     margin-left: 10px;
 
 }
@@ -70,7 +69,9 @@ main {
 
 .navigation__search input {
     height: 40px;
+    max-width: 281px;
     width: 100%;
+    box-sizing: border-box;
     padding-left: 33px;
     padding-right: 15px;
     border: none;
@@ -82,13 +83,14 @@ main {
 }
 
 
+
 .navigation__search input:focus-visible {
     outline: none;
 }
 
 .search-img {
     position: absolute;
-    top: 13px;
+    top: 12px;
     left: 10px;
 }
 
@@ -110,6 +112,9 @@ main {
     justify-self: end;
 }
 
+.navigation__right span{
+    display: none;
+}
 
 .right__info {
     display: grid;
@@ -117,7 +122,7 @@ main {
     align-items: center;
 }
 
-.right__info span {
+.right__info div {
     margin-left: 5px;
     font-style: normal;
     font-weight: 500;
@@ -166,6 +171,8 @@ main {
     margin: 0 auto;
 
 }
+
+
 
 .profile-row1 {
     display: flex;
@@ -424,7 +431,8 @@ main {
     grid-template-columns:  360px auto;
     grid-column-gap: 15px;
     max-width: 878px;
-    padding-top: 15px;
+    padding: 15px 5px 0 5px;
+    box-sizing: content-box;
     margin: 0 auto;
 
 }
@@ -1081,3 +1089,89 @@ main {
     letter-spacing: 0.025em;
     color: var(--facebook-gray);
 }
+
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px){
+    .navigation {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-column-gap: 10px;
+        max-width: 768px;
+        padding: 10px 15px 10px 15px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .navigation__search input {
+        height: 40px;
+        width: 40px;
+        box-sizing: border-box;
+        padding-left: 0;
+        padding-right: 0;
+        color: var(--facebook-input-gray);
+    }
+    .navigation__search input::placeholder {
+        color: var(--facebook-input-gray);
+    }
+
+    /*.menu-icon {*/
+    /*    display: block;*/
+    /*    position: absolute;*/
+    /*    top: 23px;*/
+    /*    right: 15px;*/
+    /*    height: 3px;*/
+    /*    width: 30px;*/
+    /*    background-color: var(--menu-icon);*/
+    /*}*/
+
+    /*.menu-icon::after {*/
+    /*    content: '';*/
+    /*    margin-top: 5px;*/
+    /*    display: block;*/
+    /*    height: 3px;*/
+    /*    width: 30px;*/
+    /*    background-color: var(--menu-icon);*/
+    /*}*/
+
+    /*.menu-icon::before {*/
+    /*    content: '';*/
+    /*    display: block;*/
+    /*    height: 3px;*/
+    /*    width: 30px;*/
+    /*    margin-top: 8px;*/
+    /*    background-color: var(--menu-icon);*/
+    /*}*/
+
+    .navigation__right {
+        display: grid;
+        grid-template-columns: 1fr 40px 40px 40px 40px;
+        grid-column-gap: 10px;
+        align-items: center;
+        justify-self: end;
+        position: relative;
+    }
+
+
+    .right__info {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+
+
+
+    .right__icons {
+        display: grid;
+        width: 40px;
+        height: 40px;
+        background-color: var(--facebook-light-gray);
+        border-radius: 50%;
+        align-items: center;
+        justify-items: center;
+    }
+
+}
+
