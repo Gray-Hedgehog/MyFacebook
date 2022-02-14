@@ -139,7 +139,7 @@ main {
     justify-items: center;
 }
 
-.drop-down {
+.drop {
     position: relative;
     width: 40px;
     height: 40px;
@@ -149,9 +149,10 @@ main {
     align-items: center;
     justify-items: center;
     cursor: pointer;
+    z-index: 2;
 }
 
-.drop-down::after {
+.drop::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -164,8 +165,7 @@ main {
     mask-image: url("../img/icons/push_list.svg");
 }
 
-.drop-down:focus::after {
-    content: '';
+.drop.close::after{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -177,6 +177,9 @@ main {
     mask-image: url("../img/icons/close_white_24dp.svg");
 }
 
+.down-icons {
+    display: none;
+}
 main {
     width: 100%;
     margin: 0 auto;
@@ -1119,10 +1122,11 @@ main {
     display: none;
 }
 
+
 @media (max-width: 768px){
     .navigation {
         display: grid;
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto auto auto;
         grid-column-gap: 10px;
         max-width: 768px;
         padding: 10px 15px 10px 15px;
@@ -1141,6 +1145,47 @@ main {
         color: var(--facebook-input-gray);
     }
 
+    .navigation__right {
+        display: grid;
+        grid-template-columns: 1fr 40px;
+        grid-column-gap: 10px;
+        align-items: center;
+        justify-self: end;
+    }
+    .right__icons {
+        display: none;
+    }
+
+    .down-icons {
+        display: none;
+        grid-auto-columns: auto;
+        position: absolute;
+        top:32px;
+        right: 15px;
+        height: max-content;
+        width: max-content;
+        padding-top: 20px;
+        border-radius: 0 0 40px 40px;
+        background-color: var(--facebook-light-gray);
+        z-index: 1;
+    }
+    .icons-drop{
+        display: grid;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .line-gray {
+        height: 1px;
+        width: 100%;
+        background-color: var(--facebook-gray) ;
+    }
+    .show {
+        display: grid;
+    }
     /*.menu-icon {*/
     /*    display: block;*/
     /*    position: absolute;*/
@@ -1169,33 +1214,33 @@ main {
     /*    background-color: var(--menu-icon);*/
     /*}*/
 
-    .navigation__right {
-        display: grid;
-        grid-template-columns: 1fr 40px 40px 40px 40px;
-        grid-column-gap: 10px;
-        align-items: center;
-        justify-self: end;
-        position: relative;
-    }
+    /*.navigation__right {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: 1fr 40px 40px 40px 40px;*/
+    /*    grid-column-gap: 10px;*/
+    /*    align-items: center;*/
+    /*    justify-self: end;*/
+    /*    position: relative;*/
+    /*}*/
 
 
-    .right__info {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-    }
+    /*.right__info {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: auto 1fr;*/
+    /*    align-items: center;*/
+    /*}*/
 
 
 
-    .right__icons {
-        display: grid;
-        width: 40px;
-        height: 40px;
-        background-color: var(--facebook-light-gray);
-        border-radius: 50%;
-        align-items: center;
-        justify-items: center;
-    }
+    /*.right__icons {*/
+    /*    display: grid;*/
+    /*    width: 40px;*/
+    /*    height: 40px;*/
+    /*    background-color: var(--facebook-light-gray);*/
+    /*    border-radius: 50%;*/
+    /*    align-items: center;*/
+    /*    justify-items: center;*/
+    /*}*/
 
 }
 
