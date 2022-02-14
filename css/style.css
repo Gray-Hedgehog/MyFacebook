@@ -139,6 +139,44 @@ main {
     justify-items: center;
 }
 
+.drop-down {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: var(--facebook-light-gray);
+    border-radius: 50%;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.drop-down::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    background-color: var(--facebook-gray);
+    -webkit-mask-image: url("../img/icons/push_list.svg");
+    mask-image: url("../img/icons/push_list.svg");
+}
+
+.drop-down:focus::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    transform:   translate(-50%, -50%);
+    background-color: var(--facebook-gray);
+    -webkit-mask-image: url("../img/icons/close_white_24dp.svg");
+    mask-image: url("../img/icons/close_white_24dp.svg");
+}
+
 main {
     width: 100%;
     margin: 0 auto;
@@ -310,20 +348,6 @@ main {
     -webkit-mask-image: url("../img/icons/more_gray.svg");
     mask-image: url("../img/icons/more_gray.svg");
 }
-
-
-/*.masked:active::after {*/
-/*    content: '';*/
-/*    width: 9px;*/
-/*    height: 5px;*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    right: 0;*/
-/*    transform: rotate(180deg) translateY(50%);*/
-/*    background-color: var(--facebook-gray);*/
-/*    -webkit-mask-image: url("../img/icons/more_gray.svg");*/
-/*    mask-image: url("../img/icons/more_gray.svg");*/
-/*}*/
 
 .masked:focus::after {
     content: '';
