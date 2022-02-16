@@ -216,11 +216,11 @@ main {
 
 .profile-row1 {
     display: block;
-    width: 100%;
+    width: 100vw;
 }
 
 .profile-row1 img {
-    width: 100%;
+    width: 100vw;
 }
 
 .profile-row2 {
