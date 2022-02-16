@@ -208,7 +208,6 @@ main {
     /*min-width: 390px;*/
     width: 100%;
     height: max-content;
-
     margin: 0 auto;
 
 }
@@ -1344,8 +1343,12 @@ main {
         grid-template-columns: repeat(2, auto);
     }
 
-
     .row3-section1 {
         grid-template-columns: repeat(4, auto);
+    }
+
+    .profile-header {
+
+        width: 100vw;
     }
 }
