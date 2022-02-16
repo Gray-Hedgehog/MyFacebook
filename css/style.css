@@ -4,6 +4,9 @@
 html {
     box-sizing: border-box;
 }
+button, input {
+    box-sizing: border-box;
+}
 
 *:after, *:before {
     box-sizing: border-box;
@@ -210,6 +213,7 @@ main {
     height: max-content;
     margin: 0 auto;
 
+    box-sizing: border-box;
 }
 
 
