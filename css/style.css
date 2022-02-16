@@ -215,7 +215,7 @@ main {
 
 
 .profile-row1 {
-    display: flex;
+    display: block;
     width: 100%;
 }
 
@@ -1056,7 +1056,7 @@ main {
 
 .card-wrapper {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto ;
     /*grid-template-rows: 1fr;*/
     grid-gap: 9px;
     /*height: 500px;*/
