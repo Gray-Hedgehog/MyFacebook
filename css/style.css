@@ -1352,7 +1352,10 @@ main {
     }
 
     .profile-header {
-
         width: 100vw;
+    }
+
+    .profile-header {
+        margin: 0;
     }
 }
