@@ -24,10 +24,11 @@ function myFunction() {
 //         // }
 //     }
 // }
-
+var dropdowns = document.getElementsByClassName("down-icons");
+var i = 1;
 myClose.onfocus = function (){
     // if (this.classList.contains())
-    openDropdown.classList.contains('show');
+    // openDropdown.classList.contains('show');
     myClose.classList.contains('close');
 }
 
@@ -35,8 +36,7 @@ myClose.onblur = function (){
     if (myClose.classList.contains('close')){
         myClose.classList.remove('close');
     }
-    var dropdowns = document.getElementsByClassName("down-icons");
-    var i = 1;
+
     for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
         if (openDropdown.classList.contains('show')) {
