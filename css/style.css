@@ -1340,4 +1340,9 @@ main {
         display: none;
     }
 
+    .profile-row3 {
+
+        grid-template-columns: repeat(2, auto);
+
+    }
 }
