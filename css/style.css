@@ -1246,7 +1246,7 @@ main {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .grid-wrapper {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: calc(100vw - 10px);
         grid-template-rows:  auto auto;
         grid-row-gap: 15px;
         max-width: 482px;
