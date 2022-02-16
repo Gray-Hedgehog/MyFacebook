@@ -1125,15 +1125,7 @@ main {
 
 
 @media (max-width: 768px) {
-    .navigation {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-column-gap: 10px;
-        max-width: 768px;
-        padding: 10px 15px 10px 15px;
-        margin: 0 auto;
-        align-items: center;
-    }
+
 
     .navigation__search input {
         height: 40px;
@@ -1141,7 +1133,7 @@ main {
         box-sizing: border-box;
         padding-left: 0;
         padding-right: 0;
-        color: var(--facebook-input-gray);
+
     }
 
     .navigation__search input::placeholder {
@@ -1149,11 +1141,7 @@ main {
     }
 
     .navigation__right {
-        display: grid;
         grid-template-columns: 1fr 40px;
-        grid-column-gap: 10px;
-        align-items: center;
-        justify-self: end;
     }
 
     .right__icons {
@@ -1258,6 +1246,7 @@ main {
     .navigation {
         grid-template-columns: 1fr  auto;
         width: 100vw;
+        box-sizing: border-box;
     }
 
     .navigation__search input {
