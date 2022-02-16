@@ -205,7 +205,7 @@ main {
 
 .profile-header {
     max-width: 940px;
-    min-width: 390px;
+    /*min-width: 390px;*/
     width: 100%;
     height: max-content;
 
