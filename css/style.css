@@ -1341,8 +1341,11 @@ main {
     }
 
     .profile-row3 {
-
         grid-template-columns: repeat(2, auto);
+    }
 
+
+    .row3-section1 {
+        grid-template-columns: repeat(4, auto);
     }
 }
