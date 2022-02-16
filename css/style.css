@@ -1358,4 +1358,8 @@ main {
     .profile-header {
         margin: 0;
     }
+
+    .grid-wrapper {
+        margin: 0;
+    }
 }
