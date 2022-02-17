@@ -65,8 +65,7 @@ main {
 
 .navigation__search {
     position: relative;
-    margin-left: 10px;
-
+    margin-left: 10px
 }
 
 
@@ -89,12 +88,85 @@ main {
 .navigation__search input:focus-visible {
     outline: none;
 }
-
-.search-img {
+.navigation__search img {
     position: absolute;
     top: 12px;
     left: 10px;
 }
+.menu {
+    display: grid;
+    grid-auto-rows: 60px;
+    align-items: center;
+    position: fixed;
+    top: 64px;
+    left: -100%;
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100% - 63px);
+    padding: 10px;
+    transition: left 0.3s ease 0s;
+    background-color: rgba(50, 50, 50, 0.9) ;
+    overflow: auto;
+}
+
+body ._lock {
+    overflow: hidden;
+}
+
+.menu ._lock {
+    left: -100%;
+}
+
+._active {
+    left: 0;
+}
+
+.menu-search {
+    position: relative;
+    width: 100%;
+}
+
+
+.menu-search input {
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 33px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--facebook-input-gray);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+.menu-search input:focus-visible {
+    outline: none;
+}
+
+.menu-search-img {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.menu-search label {
+    display: none;
+}
+
+.menu-links {
+    display: grid;
+    grid-template-columns: 26px auto;
+    grid-column-gap: 10px;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+}
+
 
 
 .navigation__middle {
@@ -1364,5 +1436,42 @@ main {
     .post-create {
         display: none;
 
+    }
+
+    .navigation__left {
+        grid-template-columns: 40px 50px 40px;
+        align-items: center;
+    }
+
+    .navigation__search {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        position: relative;
+        height: 3px;
+        width: 30px;
+        margin-left: 10px;
+        background-color: var(--menu-icon);
+    }
+
+    .menu-icon::before {
+        content: '';
+        display: block;
+        position: relative;
+        height: 3px;
+        width: 30px;
+        transform: translateY(-11px);
+        background-color: var(--menu-icon);
+    }
+    .menu-icon::after {
+        content: '';
+        display: block;
+        position: relative;
+        height: 3px;
+        width: 30px;
+        transform: translateY(8px);
+        background-color: var(--menu-icon);
     }
 }

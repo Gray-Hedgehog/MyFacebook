@@ -26,14 +26,14 @@ function myFunction() {
 // }
 var dropdowns = document.getElementsByClassName("down-icons");
 var i = 1;
-myClose.onfocus = function (){
+myClose.onfocus = function () {
     // if (this.classList.contains())
     // openDropdown.classList.contains('show');
     myClose.classList.contains('close');
 }
 
-myClose.onblur = function (){
-    if (myClose.classList.contains('close')){
+myClose.onblur = function () {
+    if (myClose.classList.contains('close')) {
         myClose.classList.remove('close');
     }
 
@@ -43,4 +43,13 @@ myClose.onblur = function (){
             openDropdown.classList.remove('show');
         }
     }
+}
+
+const menuIcon = document.querySelector('.menu-icon')
+if (menuIcon) {
+    const menuBody = document.querySelector('.menu');
+    menuIcon.addEventListener("click", function (e) {
+        document.body.classList.toggle('_lock');
+        menuBody.classList.toggle('_active');
+    });
 }
