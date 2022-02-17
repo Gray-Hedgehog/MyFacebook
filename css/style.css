@@ -263,9 +263,6 @@ main {
 
 .wrapper {
     width: 100%;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*height: 100vh;*/
 }
 
 .container {
@@ -280,11 +277,9 @@ main {
 
 .profile-header {
     max-width: 940px;
-    /*min-width: 390px;*/
     width: 100%;
     height: max-content;
     margin: 0 auto;
-
     box-sizing: border-box;
 }
 
@@ -351,8 +346,6 @@ main {
 
 .profile-button button {
     display: grid;
-    /*display: flex;*/
-    /*grid-template-columns: auto auto ;*/
     grid-auto-flow: column;
     grid-column-gap: 6px;
     width: 100%;
@@ -362,14 +355,11 @@ main {
     padding-left: 6px;
     border: none;
     border-radius: 6px;
-    /*align-content: center;*/
     align-items: center;
     justify-content: center;
-    /*justify-items: center;*/
     font-size: 17px;
     font-weight: 400;
     font-style: normal;
-    /*line-height: 20px;*/
     color: white;
     background-color: var(--facebook-blue);
     cursor: pointer;
@@ -443,36 +433,27 @@ main {
 
 
 .row3-section2 {
-    /*display: grid;*/
     display: flex;
-    /*grid-template-columns: repeat(4, 1fr);*/
     grid-auto-flow: column;
     grid-column-gap: 10px;
     justify-self: end;
     align-items: center;
-    /*justify-items: center;*/
+
 
 }
 
-.row3-section2 img {
-    /*width: 15px;*/
-    /*height: 16px;*/
-}
+
 
 .row3-section2 button {
-    /*display: flex;*/
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 6px;
+    display: flex;
     width: 100%;
     height: 35px;
     padding-left: 5px;
     border: none;
-    /*box-sizing: content-box;*/
     border-radius: 6px;
     position: relative;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -632,7 +613,6 @@ main {
     margin-top: 4px;
     box-sizing: border-box;
     justify-content: flex-end;
-    /*background-color: black;*/
 }
 
 .only-fans img {
@@ -806,7 +786,6 @@ main {
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 32px;
     align-content: start;
-    /*margin-top: 10px;*/
 }
 
 .content-row {
@@ -1132,30 +1111,14 @@ main {
 .card-wrapper {
     display: grid;
     grid-template-columns: auto ;
-    /*grid-template-rows: 1fr;*/
     grid-gap: 9px;
-    /*height: 500px;*/
     height: 385px;
-    /*max-width: 487px;*/
-    /*width: 100%;*/
     margin: 11px 0 0 16px;
-    /*overflow-x: scroll;*/
-    /*transform: rotate(-90deg);*/
-    /*transform-origin: right top;*/
 }
 
-/*.post-card  > * {*/
-/*    transform: rotate(90deg);*/
-/*    transform-origin: right top;*/
-/*}*/
-/*.card-wrapper::-webkit-scrollbar {*/
-/*    height: 1px;*/
-/*    background-color: #f9f9fd;*/
-/*}*/
 
 .post-card {
     width: 300px;
-    /*max-width: 300px;*/
     height: 100%;
     max-height: 375px;
     border: 1px solid var(--facebook-light-gray);
@@ -1293,7 +1256,6 @@ main {
     }
 
     .navigation__middle {
-        /*display: grid;*/
         display: none;
         grid-template-columns: repeat(5, 1fr);
         grid-column-gap: 5px;
@@ -1308,7 +1270,6 @@ main {
 
     .right__info {
         display: none;
-        /*display: grid;*/
         grid-template-columns: auto 1fr;
         align-items: center;
     }
