@@ -1237,13 +1237,11 @@ main {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .grid-wrapper {
         display: grid;
-        grid-template-columns: calc(100vw - 10px);
+        grid-template-columns: 100% ;
         grid-template-rows:  auto auto;
         grid-row-gap: 15px;
-        max-width: 482px;
-        padding: 15px 5px 0 5px;
         box-sizing: content-box;
-        margin: 0 auto;
+
     }
 
     .navigation {
@@ -1363,4 +1361,8 @@ main {
         margin: 0;
     }
 
+    .post-create {
+        display: none;
+
+    }
 }
