@@ -438,8 +438,6 @@ main {
     grid-column-gap: 10px;
     justify-self: end;
     align-items: center;
-
-
 }
 
 
@@ -463,8 +461,6 @@ main {
 }
 
 .row3-section2 .type1 button {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
     width: 110px;
 }
 
