@@ -698,9 +698,9 @@ main {
 
 .side-row .photos {
     display: grid;
-    grid-template-columns: repeat(3, 104px);
-    grid-template-rows: repeat(2, 104px);
-    grid-gap: 3px;
+    grid-template-columns: repeat(3, 108px);
+    grid-template-rows: repeat(2, 108px);
+    grid-gap: 4px;
     width: 100%;
     box-sizing: border-box;
     border-radius: 8px;
@@ -1256,54 +1256,20 @@ main {
         display: grid;
     }
 
-    /*.menu-icon {*/
-    /*    display: block;*/
-    /*    position: absolute;*/
-    /*    top: 23px;*/
-    /*    right: 15px;*/
-    /*    height: 3px;*/
-    /*    width: 30px;*/
-    /*    background-color: var(--menu-icon);*/
-    /*}*/
-    /*.menu-icon::after {*/
-    /*    content: '';*/
-    /*    margin-top: 5px;*/
-    /*    display: block;*/
-    /*    height: 3px;*/
-    /*    width: 30px;*/
-    /*    background-color: var(--menu-icon);*/
-    /*}*/
-    /*.menu-icon::before {*/
-    /*    content: '';*/
-    /*    display: block;*/
-    /*    height: 3px;*/
-    /*    width: 30px;*/
-    /*    margin-top: 8px;*/
-    /*    background-color: var(--menu-icon);*/
-    /*}*/
-    /*.navigation__right {*/
-    /*    display: grid;*/
-    /*    grid-template-columns: 1fr 40px 40px 40px 40px;*/
-    /*    grid-column-gap: 10px;*/
-    /*    align-items: center;*/
-    /*    justify-self: end;*/
-    /*    position: relative;*/
-    /*}*/
-    /*.right__info {*/
-    /*    display: grid;*/
-    /*    grid-template-columns: auto 1fr;*/
-    /*    align-items: center;*/
-    /*}*/
-    /*.right__icons {*/
-    /*    display: grid;*/
-    /*    width: 40px;*/
-    /*    height: 40px;*/
-    /*    background-color: var(--facebook-light-gray);*/
-    /*    border-radius: 50%;*/
-    /*    align-items: center;*/
-    /*    justify-items: center;*/
-    /*}*/
+    .type1 {
+        display: none;
+    }
 
+    .type2 {
+        display: none;
+    }
+    .type3 {
+        display: none;
+    }
+
+    .profile-row3 {
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -1473,5 +1439,18 @@ main {
         width: 30px;
         transform: translateY(8px);
         background-color: var(--menu-icon);
+    }
+
+    .side-row .photos {
+        display: grid;
+        grid-template-columns: repeat(3, calc((100% - 4px * 2 ) / 3));
+        /*grid-template-rows: repeat(2, calc((70% - 4px) / 2));*/
+        /*height: calc(((70% - 4px) / 2) * 2);*/
+        grid-template-rows: repeat(2, 108px);
+        grid-gap: 4px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 8px;
+        overflow: hidden;
     }
 }
