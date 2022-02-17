@@ -102,7 +102,7 @@ main {
     left: -100%;
     box-sizing: border-box;
     width: 100%;
-    height: calc(100% - 63px);
+    height: calc(100% - 65px);
     padding: 10px;
     transition: left 0.3s ease 0s;
     background-color: rgba(50, 50, 50, 0.9) ;
