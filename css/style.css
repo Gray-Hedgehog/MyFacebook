@@ -472,7 +472,7 @@ main {
     border-radius: 6px;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1272,7 +1272,7 @@ main {
     }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media (max-width: 375px) {
     .grid-wrapper {
         display: grid;
         grid-template-columns: 100% ;
