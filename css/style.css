@@ -219,11 +219,11 @@ main {
 
 .profile-row1 {
     display: block;
-    width: 100vw;
+    width: 100%;
 }
 
 .profile-row1 img {
-    width: 100vw;
+    width: 100%;
 }
 
 .profile-row2 {
@@ -1362,5 +1362,5 @@ main {
     .grid-wrapper {
         margin: 0;
     }
-    
+
 }
