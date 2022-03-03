@@ -58,7 +58,7 @@ if (menuIcon) {
 
 const likeButton = document.querySelector('.like-button')
 
-likeButton.addEventListener('click', function handleLike() {
+function handleLike() {
     likeButton.classList.toggle('liked')
     if (likeButton.className === 'like-button liked') {
         likeButton.innerText = 'Liked'
@@ -67,7 +67,9 @@ likeButton.addEventListener('click', function handleLike() {
         likeButton.innerText = 'Like'
     }
     console.log(likeButton.className)
-})
+}
+
+likeButton.addEventListener('click', handleLike)
 
 
 
