@@ -54,9 +54,11 @@ if (menuIcon) {
 //     }
 // })
 
+
+
 const likeButton = document.querySelector('.like-button')
 
-likeButton.addEventListener('click', () => {
+likeButton.addEventListener('click', function handleLike() {
     likeButton.classList.toggle('liked')
     if (likeButton.className === 'like-button liked') {
         likeButton.innerText = 'Liked'
@@ -66,3 +68,28 @@ likeButton.addEventListener('click', () => {
     }
     console.log(likeButton.className)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
