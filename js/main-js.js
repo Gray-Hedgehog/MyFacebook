@@ -37,19 +37,33 @@ if (menuIcon) {
 }
 
 // like button
-const like = document.querySelector('#likeButton')
-like.textContent = 'Like'
+// const like = document.querySelector('#likeButton')
+// like.textContent = 'Like'
+//
+// like.addEventListener('click',  () => {
+//     console.log('Click')
+//     if (like.textContent === 'Like'){
+//         console.log(like.textContent)
+//         like.textContent = 'Liked'
+//         like.style.color = 'red'
+//         like.style.backgroundColor = 'blue'
+//     } else {
+//         like.textContent = 'Like'
+//         like.style.color = '#080808'
+//         like.style.backgroundColor = '#E5E6EB'
+//     }
+// })
 
-like.addEventListener('click',  () => {
-    console.log('Click')
-    if (like.textContent === 'Like'){
-        console.log(like.textContent)
-        like.textContent = 'Liked'
-        like.style.color = 'red'
-        like.style.backgroundColor = 'blue'
-    } else {
-        like.textContent = 'Like'
-        like.style.color = '#080808'
-        like.style.backgroundColor = '#E5E6EB'
-    }
+const likeButton = document.querySelector('.like-button')
+
+likeButton.addEventListener('click', () => {
+    likeButton.classList.toggle('liked')
+    likeButton.innerText = 'Liked'
+    console.log('click')
+    // let i = 1
+    // for (i = 1; i >= length; length) {
+    //     if ( i % 2 === 0 ) {
+    //         likeButton.innerText = 'Like'
+    //     }
+    // }
 })
