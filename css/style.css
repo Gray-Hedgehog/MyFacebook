@@ -457,7 +457,6 @@ main {
     font-size: 15px;
     background-color: var(--facebook-light-gray);
     cursor: pointer;
-
 }
 
 .row3-section2 .type1 button {
@@ -473,6 +472,7 @@ main {
     content: '';
     width: 16px;
     height: 15px;
+    margin-right: 5px;
     position: relative;
     top: 20%;
     transform: translateY(-50%);
@@ -485,6 +485,7 @@ main {
     content: '';
     width: 16px;
     height: 15px;
+    margin-right: 5px;
     position: relative;
     top: 20%;
     transform: translateY(-50%);
@@ -519,7 +520,6 @@ main {
     padding: 15px 5px 0 5px;
     box-sizing: content-box;
     margin: 0 auto;
-
 }
 
 .grid-side {
