@@ -1,9 +1,10 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+
+// import styled from 'variables.css'
 function myFunction() {
     document.getElementById("myClose").classList.toggle("close");
     document.getElementById("myDropdown").classList.toggle("show");
-
 }
 
 
@@ -34,3 +35,21 @@ if (menuIcon) {
         menuBody.classList.toggle('_active');
     });
 }
+
+// like button
+const like = document.querySelector('#likeButton')
+like.textContent = 'Like'
+
+like.addEventListener('click',  () => {
+    console.log('Click')
+    if (like.textContent === 'Like'){
+        console.log(like.textContent)
+        like.textContent = 'Liked'
+        like.style.color = 'red'
+        like.style.backgroundColor = 'blue'
+    } else {
+        like.textContent = 'Like'
+        like.style.color = '#080808'
+        like.style.backgroundColor = '#E5E6EB'
+    }
+})

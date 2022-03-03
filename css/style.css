@@ -476,22 +476,22 @@ main {
     mask-image: url("../img/icons/like.svg");
 }
 
-.row3-section2 .type1 button:active::before {
-    content: '';
-    width: 16px;
-    height: 15px;
-    position: relative;
-    top: 20%;
-    transform: translateY(-50%);
-    background-color: var(--facebook-blue);
-    -webkit-mask-image: url("../img/icons/like.svg");
-    mask-image: url("../img/icons/like.svg");
+/*.row3-section2 .type1 button:active::before {*/
+/*    content: '';*/
+/*    width: 16px;*/
+/*    height: 15px;*/
+/*    position: relative;*/
+/*    top: 20%;*/
+/*    transform: translateY(-50%);*/
+/*    background-color: var(--facebook-blue);*/
+/*    -webkit-mask-image: url("../img/icons/like.svg");*/
+/*    mask-image: url("../img/icons/like.svg");*/
 
-}
+/*}*/
 
-.row3-section2 .type1 button:active {
-    color: var(--facebook-blue);
-}
+/*.row3-section2 .type1 button:active {*/
+/*    color: var(--facebook-blue);*/
+/*}*/
 
 .row3-section2 .type2 button {
     width: 110px;
