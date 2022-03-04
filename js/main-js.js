@@ -58,19 +58,24 @@ if (menuIcon) {
 
 const likeButton = document.querySelector('.like-button')
 
-function handleLike() {
-    likeButton.classList.toggle('liked')
-    if (likeButton.className === 'like-button liked') {
-        likeButton.innerText = 'Liked'
+function handleLike(node, token, name, textActive, textInactive) {
+    likeButton.classList.toggle(token)
+    if (likeButton.className === name) {
+        likeButton.innerText = textActive
         console.log('liked')
     } else {
-        likeButton.innerText = 'Like'
+        likeButton.innerText = textInactive
     }
     console.log(likeButton.className)
 }
 
-likeButton.addEventListener('click', handleLike)
-
+likeButton.addEventListener('click', function (event){
+    console.log('Click')
+    if (event.target.closest('.like-button')) {
+        handleLike(likeButton, 'liked', 'like-button liked', 'Liked', 'Like')
+    }
+})
+//likeButton.removeEventListener('click', handleLike)
 
 
 
