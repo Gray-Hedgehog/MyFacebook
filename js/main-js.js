@@ -69,9 +69,19 @@ function handleLike(event) {
 likeButton.addEventListener('click', handleLike)
 
 
+const blueTabParent = document.querySelector('.row3-section1')
+const tabParentFirstButton = document.querySelector('.row3-section1 button:nth-of-type(1)')
+const blueTab = document.querySelector('.blue-tab')
+let blueTabFirstPosition  = blueTab.style.left
 
+function targetTab (event) {
+    let tabParentFirstButtonLeft =  tabParentFirstButton.getBoundingClientRect()
+    let rect = event.target.getBoundingClientRect()
+    blueTab.style.left = rect.left - tabParentFirstButtonLeft.left + "px"
+    blueTab.style.width = rect.width + "px"
+}
 
-
+blueTabParent.addEventListener('click', targetTab)
 
 
 
