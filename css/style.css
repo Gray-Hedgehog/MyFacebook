@@ -402,6 +402,7 @@ main {
 
 .blue-tab {
     position: absolute;
+    left: 0px;
     bottom: 0;
     height: 3px;
     width: 100%;
