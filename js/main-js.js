@@ -36,24 +36,6 @@ if (menuIcon) {
     });
 }
 
-// like button
-// const like = document.querySelector('#likeButton')
-// like.textContent = 'Like'
-//
-// like.addEventListener('click',  () => {
-//     console.log('Click')
-//     if (like.textContent === 'Like'){
-//         console.log(like.textContent)
-//         like.textContent = 'Liked'
-//         like.style.color = 'red'
-//         like.style.backgroundColor = 'blue'
-//     } else {
-//         like.textContent = 'Like'
-//         like.style.color = '#080808'
-//         like.style.backgroundColor = '#E5E6EB'
-//     }
-// })
-
 
 const likeButton = document.querySelector('.like-button')
 
@@ -69,16 +51,39 @@ function handleLike(event) {
 likeButton.addEventListener('click', handleLike)
 
 // Blue Tab
-
-
 const row3Section1 = document.querySelector('.row3-section1')
 const buttonTub = document.querySelector('.button-tab')
+
 function targetTab(event) {
-    buttonTub.style.left = `${event.target.offsetLeft - row3Section1.offsetLeft}px`
+    buttonTub.style.transform = `translateX(${event.target.offsetLeft - row3Section1.offsetLeft}px) `
     buttonTub.style.width = `${event.target.offsetWidth}px`
 }
 
 row3Section1.addEventListener('click', targetTab)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
