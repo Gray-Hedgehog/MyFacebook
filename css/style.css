@@ -395,12 +395,11 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    color: var(--facebook-gray);
     background-color: transparent;
     cursor: pointer;
 }
 
-.button-tab {
+.tab {
     position: absolute;
     left: 0px;
     bottom: 0;
@@ -409,6 +408,14 @@ main {
     width: 100%;
     transition: all 0.5s ease-out;
     background-color: var(--facebook-blue);
+}
+
+button .text-color-gray {
+    color: var(--facebook-gray);
+}
+
+.text-color-blue button .text-color-gray  {
+    color: var(--facebook-blue);
 }
 
 .masked::after {
