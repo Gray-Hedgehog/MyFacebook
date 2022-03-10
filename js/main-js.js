@@ -80,7 +80,7 @@ const fbGray = '#66676B'
 function targetTab(event) {
     tab.style.left = `${event.target.offsetLeft - row3Section1.offsetLeft}px`
     tab.style.width = `${event.target.offsetWidth}px`
-    event.target.style.color === fbGray ? event.target.classList.add('text-color-blue') : event.target.classList.remove('text-color-blue')
+    event.target.classList.contains('text-color-gray' || 'text-color-blue') ? event.target.classList.toggle('text-color-blue') : event.target.classList.remove('text-color-blue')
 }
 
 row3Section1.addEventListener('click', targetTab)

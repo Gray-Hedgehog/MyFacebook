@@ -4,6 +4,7 @@
 html {
     box-sizing: border-box;
 }
+
 button, input {
     box-sizing: border-box;
 }
@@ -88,11 +89,13 @@ main {
 .navigation__search input:focus-visible {
     outline: none;
 }
+
 .navigation__search img {
     position: absolute;
     top: 12px;
     left: 10px;
 }
+
 .menu {
     display: grid;
     grid-auto-rows: 60px;
@@ -105,7 +108,7 @@ main {
     height: calc(100% - 64px);
     padding: 10px;
     transition: left 0.3s ease 0s;
-    background-color: rgba(50, 50, 50, 0.9) ;
+    background-color: rgba(50, 50, 50, 0.9);
     overflow: auto;
 }
 
@@ -166,7 +169,6 @@ body ._lock {
     font-size: 15px;
     color: white;
 }
-
 
 
 .navigation__middle {
@@ -410,11 +412,11 @@ main {
     background-color: var(--facebook-blue);
 }
 
-button .text-color-gray {
+.text-color-gray {
     color: var(--facebook-gray);
 }
 
-.text-color-blue button .text-color-gray  {
+.text-color-blue {
     color: var(--facebook-blue);
 }
 
@@ -454,7 +456,6 @@ button .text-color-gray {
 }
 
 
-
 .row3-section2 button {
     display: flex;
     width: 100%;
@@ -475,12 +476,15 @@ button .text-color-gray {
 .row3-section2 .type1 button {
     width: 110px;
 }
+
 .like-button {
     color: var(--facebook-black);
 }
+
 .liked.like-button {
     color: var(--facebook-blue);
 }
+
 .like-button::before {
     content: '';
     width: 16px;
@@ -493,9 +497,11 @@ button .text-color-gray {
     -webkit-mask-image: url("../img/icons/like.svg");
     mask-image: url("../img/icons/like.svg");
 }
+
 .liked.like-button {
     background-color: var(--facebook-light-blue);
 }
+
 .liked.like-button::before {
     content: '';
     width: 16px;
@@ -1126,7 +1132,7 @@ button .text-color-gray {
 
 .card-wrapper {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     grid-gap: 9px;
     height: 385px;
     margin: 11px 0 0 16px;
@@ -1242,6 +1248,7 @@ button .text-color-gray {
     .type2 {
         display: none;
     }
+
     .type3 {
         display: none;
     }
@@ -1254,7 +1261,7 @@ button .text-color-gray {
 @media (max-width: 375px) {
     .grid-wrapper {
         display: grid;
-        grid-template-columns: 100% ;
+        grid-template-columns: 100%;
         grid-template-rows:  auto auto;
         grid-row-gap: 15px;
         box-sizing: content-box;
@@ -1345,8 +1352,9 @@ button .text-color-gray {
     }
 
     .row3-section1 button:nth-of-type(3) {
-       display: none;
+        display: none;
     }
+
     .row3-section1 button:nth-of-type(4) {
         display: none;
     }
@@ -1358,6 +1366,7 @@ button .text-color-gray {
     .type2 {
         display: none;
     }
+
     .type3 {
         display: none;
     }
@@ -1414,6 +1423,7 @@ button .text-color-gray {
         transform: translateY(-11px);
         background-color: var(--menu-icon);
     }
+
     .menu-icon::after {
         content: '';
         display: block;
@@ -1426,7 +1436,7 @@ button .text-color-gray {
 
     .side-row .photos {
         display: grid;
-        grid-template-columns: repeat(3, calc((100% - 4px * 2 ) / 3));
+        grid-template-columns: repeat(3, calc((100% - 4px * 2) / 3));
         /*grid-template-rows: repeat(2, calc((70% - 4px) / 2));*/
         /*height: calc(((70% - 4px) / 2) * 2);*/
         grid-template-rows: repeat(2, 108px);
