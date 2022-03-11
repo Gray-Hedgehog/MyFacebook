@@ -36,25 +36,6 @@ if (menuIcon) {
     });
 }
 
-// like button
-// const like = document.querySelector('#likeButton')
-// like.textContent = 'Like'
-//
-// like.addEventListener('click',  () => {
-//     console.log('Click')
-//     if (like.textContent === 'Like'){
-//         console.log(like.textContent)
-//         like.textContent = 'Liked'
-//         like.style.color = 'red'
-//         like.style.backgroundColor = 'blue'
-//     } else {
-//         like.textContent = 'Like'
-//         like.style.color = '#080808'
-//         like.style.backgroundColor = '#E5E6EB'
-//     }
-// })
-
-
 const likeButton = document.querySelector('.like-button')
 
 function handleLike(event) {
@@ -73,12 +54,13 @@ likeButton.addEventListener('click', handleLike)
 
 const row3Section1 = document.querySelector('.row3-section1')
 const tab = document.querySelector('.tab')
-const textColorBlue = document.querySelector('.row3-section1 button .text-color-blue')
+const textColorBlue = document.querySelector('.text-color-blue')
 
 function targetTab(event) {
-    tab.style.left = `${event.target.offsetLeft - row3Section1.offsetLeft}px`
+    tab.style.transform = `translateX(${event.target.offsetLeft - row3Section1.offsetLeft}px)`
     tab.style.width = `${event.target.offsetWidth}px`
     console.log(event.target.classList)
+    textColorBlue.forEach
     if (event.target.classList.contains('text-color-blue')) {
         event.target.classList.remove('text-color-blue')
     } else {
@@ -88,19 +70,19 @@ function targetTab(event) {
 
 row3Section1.addEventListener('click', targetTab)
 
-// function focusButton(event) {
-//     console.log('focus')
-//     event.target.style.background = 'red'
-//     event.target.classList.contains('text-color-blue') ? event.target.classList.remove('text-color-blue') : event.target.classList.toggle('text-color-blue')
-// }
-// function blurButton(event) {
-//     console.log('blur')
-//     event.target.classList.contains('text-color-blue') ? event.target.classList.remove('text-color-blue') : event.target.classList.remove('text-color-blue')
-// }
-//
-//
-// textColorGray.addEventListener('focus', focusButton)
-// textColorGray.addEventListener('blur', blurButton)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
