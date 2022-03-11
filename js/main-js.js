@@ -73,17 +73,43 @@ likeButton.addEventListener('click', handleLike)
 
 const row3Section1 = document.querySelector('.row3-section1')
 const tab = document.querySelector('.tab')
-const tabColor = document.querySelector('button .tab-color')
-const fbBlue = '#0572EF'
-const fbGray = '#66676B'
+const textColorBlue = document.querySelector('.row3-section1 button .text-color-blue')
 
 function targetTab(event) {
     tab.style.left = `${event.target.offsetLeft - row3Section1.offsetLeft}px`
     tab.style.width = `${event.target.offsetWidth}px`
-    event.target.classList.contains('text-color-gray' || 'text-color-blue') ? event.target.classList.toggle('text-color-blue') : event.target.classList.remove('text-color-blue')
+    console.log(event.target.classList)
+    if (event.target.classList.contains('text-color-blue')) {
+        event.target.classList.remove('text-color-blue')
+    } else {
+        event.target.classList.add('text-color-blue')
+    }
 }
 
 row3Section1.addEventListener('click', targetTab)
+
+// function focusButton(event) {
+//     console.log('focus')
+//     event.target.style.background = 'red'
+//     event.target.classList.contains('text-color-blue') ? event.target.classList.remove('text-color-blue') : event.target.classList.toggle('text-color-blue')
+// }
+// function blurButton(event) {
+//     console.log('blur')
+//     event.target.classList.contains('text-color-blue') ? event.target.classList.remove('text-color-blue') : event.target.classList.remove('text-color-blue')
+// }
+//
+//
+// textColorGray.addEventListener('focus', focusButton)
+// textColorGray.addEventListener('blur', blurButton)
+
+
+
+
+
+
+
+
+
 
 
 
