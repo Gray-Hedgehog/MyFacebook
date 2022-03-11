@@ -54,16 +54,14 @@ likeButton.addEventListener('click', handleLike)
 
 const row3Section1 = document.querySelector('.row3-section1')
 const tab = document.querySelector('.tab')
-const textColorBlue = document.querySelector('.text-color-blue')
+
 
 function targetTab(event) {
     tab.style.transform = `translateX(${event.target.offsetLeft - row3Section1.offsetLeft}px)`
     tab.style.width = `${event.target.offsetWidth}px`
     console.log(event.target.classList)
-    textColorBlue.forEach
-    if (event.target.classList.contains('text-color-blue')) {
-        event.target.classList.remove('text-color-blue')
-    } else {
+    if (event.target.classList.contains('text-color-gray')) {
+        document.querySelectorAll('.text-color-blue').forEach(n => n.classList.remove('text-color-blue'));
         event.target.classList.add('text-color-blue')
     }
 }
