@@ -372,18 +372,20 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
+
     height: 60px;
     margin: 0 30px;
     border-top: 1px solid var(--facebook-line-gray);
 }
 
-.menu-button {
+.menu-buttons {
     display: grid;
     grid-template-columns: repeat(5, auto);
+    position: relative;
 }
 
 
-.menu-button button {
+.menu-buttons button {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -420,6 +422,10 @@ main {
     color: var(--facebook-blue);
 }
 
+.more {
+    color: var(--facebook-gray);
+}
+
 .masked::after {
     content: '';
     width: 9px;
@@ -446,6 +452,20 @@ main {
     mask-image: url("../img/icons/more_gray.svg");
 }
 
+.menu-more {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--facebook-light-gray);
+    z-index: 5;
+}
+
+._active-menu {
+    display: block;
+}
 
 .page-button {
     display: flex;
@@ -1351,11 +1371,11 @@ main {
         /*display: grid;*/
     }
 
-    .menu-button button:nth-of-type(3) {
+    .menu-buttons button:nth-of-type(3) {
         display: none;
     }
 
-    .menu-button button:nth-of-type(4) {
+    .menu-buttons button:nth-of-type(4) {
         display: none;
     }
 
@@ -1375,7 +1395,7 @@ main {
         grid-template-columns: repeat(2, auto);
     }
 
-    .menu-button {
+    .menu-buttons {
         grid-template-columns: repeat(4, auto);
     }
 
