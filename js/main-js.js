@@ -52,21 +52,20 @@ likeButton.addEventListener('click', handleLike)
 // Blue Tab
 
 
-const row3Section1 = document.querySelector('.row3-section1')
-const tab = document.querySelector('.tab')
+const menuButton = document.querySelector('.menu-button')
+const tab = menuButton.querySelector('.tab')
 
 
 function targetTab(event) {
-    tab.style.transform = `translateX(${event.target.offsetLeft - row3Section1.offsetLeft}px)`
+    tab.style.transform = `translateX(${event.target.offsetLeft - menuButton.offsetLeft}px)`
     tab.style.width = `${event.target.offsetWidth}px`
-    console.log(event.target.classList)
     if (event.target.classList.contains('text-color-gray')) {
-        document.querySelectorAll('.text-color-blue').forEach(n => n.classList.remove('text-color-blue'));
+        document.querySelectorAll('.text-color-blue').forEach(n => n.classList.remove('text-color-blue'))
         event.target.classList.add('text-color-blue')
     }
 }
 
-row3Section1.addEventListener('click', targetTab)
+menuButton.addEventListener('click', targetTab)
 
 
 
