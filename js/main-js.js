@@ -67,20 +67,15 @@ function targetTab(event) {
 
 menuButtons.addEventListener('click', targetTab)
 
-
 const more = document.querySelector('.more')
 const menuMore = document.querySelector('.menu-more')
 
 function downMore(event) {
-    if (!menuMore.classList.contains('_active-menu')) {
-        menuMore.classList.add('_active-menu')
-    }
+    !menuMore.classList.contains('_active-menu') ? menuMore.classList.add('_active-menu') : false
 }
 
 function dropMore(event) {
-    if (menuMore.classList.contains('_active-menu')) {
-        menuMore.classList.remove('_active-menu')
-    }
+    menuMore.classList.contains('_active-menu') ? menuMore.classList.remove('_active-menu') : false
 }
 
 
