@@ -380,10 +380,21 @@ main {
 
 .menu-buttons {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: auto 60px;
+    grid-column-gap: 5px;
     position: relative;
 }
 
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 5px;
+    position: relative;
+}
+
+.menu-button {
+    color: var(--facebook-gray);
+}
 
 .menu-buttons button {
     display: flex;
@@ -392,6 +403,7 @@ main {
     height: 60px;
     position: relative;
     padding: 0;
+    margin: 0;
     border: none;
     box-sizing: content-box;
     align-items: center;
@@ -414,15 +426,14 @@ main {
     background-color: var(--facebook-blue);
 }
 
-.text-color-gray {
-    color: var(--facebook-gray);
-}
 
-.text-color-blue {
+
+._text-blue {
     color: var(--facebook-blue);
 }
 
 .more {
+    width: 50px;
     color: var(--facebook-gray);
 }
 
@@ -432,7 +443,7 @@ main {
     height: 5px;
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 0px;
     transform: translateY(-50%);
     background-color: var(--facebook-gray);
     -webkit-mask-image: url("../img/icons/more_gray.svg");
@@ -445,7 +456,7 @@ main {
     height: 5px;
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 0px;
     transform: rotate(180deg) translateY(50%);
     background-color: var(--facebook-gray);
     -webkit-mask-image: url("../img/icons/more_gray.svg");
@@ -1378,6 +1389,19 @@ main {
     .menu-buttons button:nth-of-type(4) {
         display: none;
     }
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        position: relative;
+    }
+
+    /*.masked::after {*/
+    /*    right: -5px;*/
+    /*}*/
+
+    /*.masked:focus::after {*/
+    /*    right: -5px;*/
+    /*}*/
 
     .type1 {
         display: none;
@@ -1396,7 +1420,7 @@ main {
     }
 
     .menu-buttons {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(2, auto);
     }
 
     .profile-header {
