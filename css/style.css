@@ -1395,14 +1395,6 @@ main {
         position: relative;
     }
 
-    /*.masked::after {*/
-    /*    right: -5px;*/
-    /*}*/
-
-    /*.masked:focus::after {*/
-    /*    right: -5px;*/
-    /*}*/
-
     .type1 {
         display: none;
     }
