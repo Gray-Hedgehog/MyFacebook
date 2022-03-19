@@ -52,16 +52,16 @@ likeButton.addEventListener('click', handleLike)
 // Blue Tab
 
 
-const menuButtons = document.querySelector('.menu-buttons')
-const tab = document.querySelector('.tab')
+const menuButtons = document.querySelector('.buttons')
+const tab = menuButtons.querySelector('.tab')
 
 
 function targetTab(event) {
     tab.style.transform = `translateX(${event.target.offsetLeft}px)`
     tab.style.width = `${event.target.offsetWidth}px`
-    if (event.target.classList.contains('text-color-gray')) {
-        document.querySelectorAll('.text-color-blue').forEach(n => n.classList.remove('text-color-blue'))
-        event.target.classList.add('text-color-blue')
+    if (event.target.classList.contains('menu-button')) {
+        document.querySelectorAll('._text-blue').forEach(n => n.classList.remove('_text-blue'))
+        event.target.classList.add('_text-blue')
     }
 }
 
@@ -71,7 +71,7 @@ const more = document.querySelector('.more')
 const menuMore = document.querySelector('.menu-more')
 
 function downMore(event) {
-    !menuMore.classList.contains('_active-menu') ? menuMore.classList.add('_active-menu') : false;
+    !menuMore.classList.contains('_active-menu') ? menuMore.classList.add('_active-menu') : menuMore.classList.remove('_active-menu');
 }
 
 function dropMore(event) {
