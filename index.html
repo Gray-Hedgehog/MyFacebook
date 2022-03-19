@@ -7,6 +7,7 @@
     <link href="fonts/HelveticaNeue/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="variables.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
     <title>MyFacebook</title>
 </head>
 <body>
@@ -134,12 +135,12 @@
                     <div class="profile-menu">
                         <div class="menu"></div>
                         <div class="menu-buttons">
-                            <button class="text-color-gray text-color-blue">Home
+                            <button class="menu-button text-color-gray text-color-blue">Home
                                 <div class="tab"></div>
                             </button>
-                            <button class="text-color-gray">Reviews</button>
-                            <button class="text-color-gray">About</button>
-                            <button class="text-color-gray">Community</button>
+                            <button class="menu-button text-color-gray">Reviews</button>
+                            <button class="menu-button text-color-gray">About</button>
+                            <button class="menu-button text-color-gray">Community</button>
                             <button class="more masked">More</button>
                             <div class="menu-more">А вот нет тут ничего! &#129335;&#8205;&#9794;&#65039;</div>
                         </div>
@@ -453,7 +454,23 @@
         </div>
     </div>
 </main>
-<script src="js/main-js.js"></script>
+<div class="amodal">
+    <div class="modal-overlay">
+        <div class="modal-window">
+            <div class="modal-header">
+                <span class="modal-title">Modal title</span>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img src="/img/3photos.jpg" alt="">
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+    <script src="js/main-js.js"></script>
+    <script src="js/modal.js"></script>
+
 </body>
 </html>
 
