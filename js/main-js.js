@@ -78,46 +78,32 @@ function dropMore(event) {
     menuMore.classList.contains('_active-menu') ? menuMore.classList.remove('_active-menu') : false;
 }
 
-
 more.addEventListener('click', downMore)
 more.addEventListener('blur', dropMore)
-
-// const $ = {}
-//
-// window.$ = $
-//
-// $.modal()
-//
-// const modal = $.modal(
-
 
 const modalWindow = document.querySelector('.modal-window')
 const modalOverlay = document.querySelector('.modal-overlay')
 const close = document.querySelector('.modal-close')
 const modalBody = document.querySelector('.modal-body')
-const modalImg = modalBody.querySelector('img')
+const modalImg = document.querySelector('.modal-img')
 
 const photos = document.querySelectorAll('.photos-img')
 
 function modalOpen(event) {
-
     modalOverlay.classList.add('open')
-    modalWindow.classList.add('open')
     modalImg.src = `${event.target.src}`
 }
 
 function modalClose(event) {
     console.log('close')
     modalOverlay.classList.remove('open')
-    modalWindow.classList.remove('open')
+
 }
 
-modalOpen()
 
-
-
-
-photos.addEventListener('click', modalOpen)
+photos.forEach((element) => {
+    element.addEventListener('click', modalOpen)
+})
 close.addEventListener('click', modalClose)
 modalOverlay.addEventListener('click', modalClose)
 
