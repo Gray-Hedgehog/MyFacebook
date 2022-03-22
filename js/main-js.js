@@ -1,16 +1,10 @@
 // burger
 
-const menuIcon = document.querySelector('.menu-icon')
-const menu = document.querySelector('.menu')
-const body = document.querySelector('body')
-function burger(event) {
-    menu.classList.toggle('_active')
-    body.classList.toggle('_lock')
-}
+import {menuIcon, burger} from "./modules/burger.js";
 
 menuIcon.addEventListener('click', burger)
 
-// оставил для сравнения
+// оставил для сравнения старый бургер
 
 // function myFunction() {
 //     document.getElementById("myClose").classList.toggle("close");
