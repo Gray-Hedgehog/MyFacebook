@@ -12,9 +12,10 @@ const modal = {
     }
 }
 
-export const modalOpen = modal.modalOpen
-export const modalClose = modal.modalClose
 export const photos = modal.photos
 export const close = modal.close
 export const modalOverlay = modal.modalOverlay
+export const modalOpen = modal.modalOpen
+export const modalClose = modal.modalClose
+
 

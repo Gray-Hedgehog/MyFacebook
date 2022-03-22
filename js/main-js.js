@@ -70,21 +70,13 @@ menuButtons.addEventListener('click', targetTab)
 
 // more
 
-const more = document.querySelector('.more')
-const menuMore = document.querySelector('.menu-more')
-
-function downMore(event) {
-    !menuMore.classList.contains('_active-menu') ? menuMore.classList.add('_active-menu') : menuMore.classList.remove('_active-menu');
-}
-
-function dropMore(event) {
-    menuMore.classList.contains('_active-menu') ? menuMore.classList.remove('_active-menu') : false;
-}
+import {more, dropMore, downMore} from "./modules/more.js";
 
 more.addEventListener('click', downMore)
 more.addEventListener('blur', dropMore)
 
 // Modal
+
 import {photos, close, modalOverlay, modalOpen, modalClose} from "./modules/modal.js";
 
 photos.forEach((element) => {
