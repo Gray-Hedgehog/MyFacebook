@@ -86,7 +86,6 @@ const modalOverlay = document.querySelector('.modal-overlay')
 const close = document.querySelector('.modal-close')
 const modalBody = document.querySelector('.modal-body')
 const modalImg = document.querySelector('.modal-img')
-
 const photos = document.querySelectorAll('.photos-img')
 
 function modalOpen(event) {
