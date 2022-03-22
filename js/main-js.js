@@ -1,7 +1,4 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-
-// import styled from 'variables.css'
+// burger
 function myFunction() {
     document.getElementById("myClose").classList.toggle("close");
     document.getElementById("myDropdown").classList.toggle("show");
@@ -38,16 +35,7 @@ if (menuIcon) {
 
 // handle like
 
-const likeButton = document.querySelector('.like-button')
-
-function handleLike(event) {
-    event.target.classList.toggle('liked')
-    if (event.target.classList.contains('liked')) {
-        event.target.innerText = 'Liked'
-    } else {
-        event.target.innerText = 'Like'
-    }
-}
+import {likeButton, handleLike} from "./modules/handle-like.js";
 
 likeButton.addEventListener('click', handleLike)
 
