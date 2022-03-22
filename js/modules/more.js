@@ -1,4 +1,3 @@
-const more = document.querySelector('.more')
 const menuMore = document.querySelector('.menu-more')
 
 const modulesMore = {
