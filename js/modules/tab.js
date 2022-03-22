@@ -1,4 +1,4 @@
-const menuButtons = document.querySelector('.buttons')
+export const menuButtons = document.querySelector('.buttons')
 const tab = menuButtons.querySelector('.tab')
 
 

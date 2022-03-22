@@ -53,9 +53,7 @@ likeButton.addEventListener('click', handleLike)
 
 // Blue Tab
 
-import {targetTab} from "./modules/tab.js";
-
-const menuButtons = document.querySelector('.buttons')
+import {targetTab, menuButtons} from "./modules/tab.js";
 
 menuButtons.addEventListener('click', targetTab)
 
