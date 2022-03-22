@@ -112,12 +112,8 @@ main {
     overflow: auto;
 }
 
-body ._lock {
+._lock {
     overflow: hidden;
-}
-
-.menu ._lock {
-    left: -100%;
 }
 
 ._active {
@@ -128,7 +124,6 @@ body ._lock {
     position: relative;
     width: 100%;
 }
-
 
 .menu-search input {
     height: 40px;
@@ -143,7 +138,6 @@ body ._lock {
     font-weight: normal;
     font-size: 15px;
 }
-
 
 .menu-search input:focus-visible {
     outline: none;
@@ -169,7 +163,6 @@ body ._lock {
     font-size: 15px;
     color: white;
 }
-
 
 .navigation__middle {
     display: grid;
@@ -285,7 +278,6 @@ main {
     box-sizing: border-box;
 }
 
-
 .profile-cover {
     display: block;
     width: 100%;
@@ -333,7 +325,6 @@ main {
     color: var(--facebook-gray);
 }
 
-
 .profile-button {
     display: grid;
     align-items: end;
@@ -366,7 +357,6 @@ main {
     background-color: var(--facebook-blue);
     cursor: pointer;
 }
-
 
 .profile-menu {
     display: grid;
@@ -425,8 +415,6 @@ main {
     transition: all 0.5s ease-out;
     background-color: var(--facebook-blue);
 }
-
-
 
 ._text-blue {
     color: var(--facebook-blue);
