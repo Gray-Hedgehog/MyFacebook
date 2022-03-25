@@ -48,10 +48,28 @@ likeButton.addEventListener('click', handleLike)
 
 // Blue Tab
 
-import {targetTab, menuButtons} from "./modules/tab.js";
+// import {targetTab, menuButtons} from "./modules/tab.js";
 
-menuButtons.addEventListener('click', targetTab)
+const menuButtons = document.querySelector('.buttons')
+const tab = menuButtons.querySelector('.tab')
+const menuButton123 = document.querySelector('.menu-button')
 
+function targetTab(event) {
+    console.log('tab')
+    // tab.style.transform = `translateX(${event.target.offsetLeft}px)`
+    // tab.style.width = `${event.target.offsetWidth}px`
+    // if (event.target.classList.contains('menu-button')) {
+    //     document.querySelectorAll('._text-blue').forEach(n => n.classList.remove('_text-blue'))
+    //     event.target.classList.add('_text-blue')
+    // }
+}
+
+menuButton123.forEach((elem) => {
+    elem.addEventListener('click', targetTab)
+})
+menuButton.forEach((element) => {
+    element.addEventListener('click', modalOpen)
+})
 // more
 
 import {more, dropMore, downMore} from "./modules/more.js";
@@ -61,15 +79,13 @@ more.addEventListener('blur', dropMore)
 
 // Modal
 
-import {photos, close, modalOverlay, modalOpen, modalClose} from "./modules/modal.js";
+import {photos, close, modalOverlay, modalWindow, modalOpen, modalClose} from "./modules/modal.js";
 
 photos.forEach((element) => {
     element.addEventListener('click', modalOpen)
 })
-close.addEventListener('click', modalClose)
 modalOverlay.addEventListener('click', modalClose)
-
-
+close.addEventListener('click', modalClose)
 
 
 
