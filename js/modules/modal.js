@@ -8,7 +8,7 @@ const modal = {
         modalOverlay.classList.add('open')
         modalImg.src = `${event.target.src}`
     },
-    modalClose: function () {
+    modalClose: function (event) {
         modalOverlay.classList.remove('open')
     }
 }
