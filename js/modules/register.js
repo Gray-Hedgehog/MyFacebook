@@ -47,7 +47,7 @@ form.onsubmit = function () {
         return false;
     }
 
-    if(!validateName(nameVal)) {
+    if (!validateName(nameVal)) {
         console.log('name not valid')
         name.classList.add('error')
         return false;
@@ -55,7 +55,7 @@ form.onsubmit = function () {
         name.classList.remove('error')
     }
 
-    if(!validateLastName(lastNameVal)) {
+    if (!validateLastName(lastNameVal)) {
         console.log('lastName not valid')
         lastName.classList.add('error')
         return false;
@@ -70,7 +70,7 @@ form.onsubmit = function () {
     } else {
         phoneNumber.classList.remove('error')
     }
-    if(!validateEmail(emailVal)) {
+    if (!validateEmail(emailVal)) {
         console.log('email not valid')
         email.classList.add('error')
         return false;
@@ -78,13 +78,15 @@ form.onsubmit = function () {
         email.classList.remove('error')
     }
     document.body.innerHTML = `
-    <h1>Validation</h1>
-        <p>Please check the data.</p>
-        <hr>
-        <p>Name:  ${name.value}</p>
-        <p>lastName:  ${lastName.value}</p>
-        <p>phoneNumber: ${phoneNumber.value}</p>
-        <p>email: ${email.value}</p>
+    <div class="wrapper">
+        <h1>Validation</h1>
+            <p>Please check the data.</p>
+            <hr>
+            <p>Name:  ${name.value}</p>
+            <p>lastName:  ${lastName.value}</p>
+            <p>phoneNumber: ${phoneNumber.value}</p>
+            <p>email: ${email.value}</p>
+    </div>
     `;
     return false
 }
