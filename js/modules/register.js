@@ -77,6 +77,15 @@ form.onsubmit = function () {
     } else {
         email.classList.remove('error')
     }
+    document.body.innerHTML = `
+    <h1>Validation</h1>
+        <p>Please check the data.</p>
+        <hr>
+        <p>Name:  ${name.value}</p>
+        <p>lastName:  ${lastName.value}</p>
+        <p>phoneNumber: ${phoneNumber.value}</p>
+        <p>email: ${email.value}</p>
+    `;
+    return false
 }
 
-// form.addEventListener('submit', validate)
