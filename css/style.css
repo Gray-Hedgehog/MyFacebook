@@ -582,7 +582,6 @@ main {
     font-weight: normal;
     font-size: 16px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-
 }
 
 
@@ -593,7 +592,6 @@ main {
 .side-title {
     display: grid;
     grid-template-columns: auto 1fr;
-
     align-items: end;
     font-style: normal;
     font-weight: bold;
