@@ -438,7 +438,7 @@ main {
     mask-image: url("../img/icons/more_gray.svg");
 }
 
-.masked:focus::after {
+.open-more::after {
     content: '';
     width: 9px;
     height: 5px;

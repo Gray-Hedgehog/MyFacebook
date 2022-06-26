@@ -83,8 +83,8 @@ form.onsubmit = function () {
             <p>Please check the data.</p>
             <hr>
             <p>Name:  ${name.value}</p>
-            <p>lastName:  ${lastName.value}</p>
-            <p>phoneNumber: ${phoneNumber.value}</p>
+            <p>Last name:  ${lastName.value}</p>
+            <p>Phone number: ${phoneNumber.value}</p>
             <p>email: ${email.value}</p>
     </div>
     `;
